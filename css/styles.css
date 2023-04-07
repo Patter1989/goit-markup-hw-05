@@ -31,6 +31,7 @@ img {
   --cornflower: #E7E9FC;
   --green: #31D0AA;
   --light-slate: #8E8F99;
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .container {
@@ -134,6 +135,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  transition: color var(--anim);
 }
 
 .main-nav-link:hover,
@@ -172,6 +174,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  transition: color var(--anim);
 }
 
 /* .contacts-item + .contacts-item {
@@ -238,6 +241,7 @@ img {
   letter-spacing: 0.04em;
   color: #FFFFFF;
   border: none;
+  transition: background-color var(--anim);
 }
 
 .main-btn:hover,
@@ -427,6 +431,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--anim),
+  fill var(--anim);
 }
 
 .social-network-link:hover,
@@ -481,6 +487,9 @@ img {
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--light-slate);
+  transition: 
+  color var(--anim),
+  fill var(--anim);
 }
 /* .customers-link:hover > .icons-clients,
 .customers-link:focus > .icons-clients {
@@ -575,6 +584,7 @@ img {
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 24px;
+  
 }
 
 .backdrop.is-hidden .modal {
@@ -592,6 +602,14 @@ img {
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: background-color var(--anim),
+  fill var(--anim);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--ocean);
+  fill: white;
 }
 
 /* =============/MODAL WINDOW============ */
@@ -631,6 +649,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--ocean);
+  transition: background-color var(--anim),
+  color var(--anim),
+  box-shadow var(--anim);
 }
 
 .menu-projects-btn:hover,
@@ -694,7 +715,7 @@ img {
   top: 0;
   background-color: var(--iris);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--anim);
   overflow: auto;
   height: 100%;
   padding-top: 40px;
@@ -713,6 +734,7 @@ img {
 
 .our-projects-link {
   display: block;
+  transition: box-shadow var(--anim);
 }
 
 .our-projects-link:hover,
