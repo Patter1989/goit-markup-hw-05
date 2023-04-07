@@ -562,7 +562,7 @@ img {
 
 /* =============MODAL WINDOW============ */
 .backdrop {
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity var(--anim), visibility var(--anim);
   position: fixed;
   top: 0;
   width: 100%;
@@ -574,7 +574,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms linear;
+  transition: transform var(--anim);
   width: 408px;
   min-height: 576px;
   background-color: #FCFCFC;
