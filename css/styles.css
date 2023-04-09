@@ -145,6 +145,7 @@ img {
 
 .mark{
   position: relative;
+  color: var(--ocean);
 }
 
 .mark::after {
